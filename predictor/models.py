@@ -104,5 +104,5 @@ class UserAttributes(models.Model):
     fav_color=models.CharField(max_length=200, choices=COLOR_CHOICES, default="")
     weight=models.IntegerField(validators=[MinValueValidator(25), MaxValueValidator(500)])
     budget=models.CharField(max_length=200, choices=BUDGET_CHOICES, default="")
-    height=models.IntegerField(validators=[MinValueValidator(0.5), MaxValueValidator(2.2)])
+    height=models.FloatField(validators=[MinValueValidator(0.5), MaxValueValidator(2.2)])
     age = models.IntegerField(default=20, validators=[MinValueValidator(1), MaxValueValidator(100)])
