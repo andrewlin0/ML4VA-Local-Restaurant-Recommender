@@ -4,7 +4,7 @@ django-heroku
 django-allauth
 Pillow
 django-crispy-forms
-sklearn==0.22.2.post1
+sklearn==0.22.2
 numpy
 pandas
 wheel
