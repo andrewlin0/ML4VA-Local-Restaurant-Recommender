@@ -17,9 +17,10 @@ def classify_me(request, target=None):
     if request.method== 'POST': #Form has just been filled out
         form = UserAttributesForm(request.POST)
         if form.is_valid():
-            user_input=form.save()
-            location=user_input.location
 
+            user_input=form.save()
+
+            location=user_input.location
             smoker = user_input.smoker
             drink_level = user_input.drink_level
             dress_preference = user_input.dress_preference
@@ -38,30 +39,29 @@ def classify_me(request, target=None):
             age = user_input.age
             ratio=weight/height
 
-            preliminary_list=[bool(smoker), drink_level, dress_preference, ambience, transport, marital_status, hijos, interest, personality,
-                              religion, activity, color, budget, age, ratio]
-
-            preliminary_list=np.asarray(preliminary_list)
-
-            pred_frame=pd.DataFrame([preliminary_list], columns=["smoker", "drink_level", "dress_preference", "ambience", "transport", "marital_status",
-                                                               "hijos", "interest", "personality","religion", "activity", "color", "budget", "age", "wh_ratio"])
-
-            cleaned_data=our_pipeline(pred_frame)
-
-            print(Main_dict)
-            #Clean data and predict
-            mexican_model = PredictorConfig.mexican_predictor
-            # r = [0] * 41
-            # r.append(70)
-            # r.append(0)
-            # r.append(1.7)
-            # r.append(1)
+            # preliminary_list=[bool(smoker), drink_level, dress_preference, ambience, transport, marital_status, hijos, interest, personality,
+            #                   religion, activity, color, budget, age, ratio]
             #
-            # p = np.array(r)
-            # t = p.reshape(1, -1)
-            mexican_prediction=mexican_model.predict(cleaned_data)
+            # preliminary_list=np.asarray(preliminary_list)
+            #
+            # pred_frame=pd.DataFrame([preliminary_list], columns=["smoker", "drink_level", "dress_preference", "ambience", "transport", "marital_status",
+            #                                                    "hijos", "interest", "personality","religion", "activity", "color", "budget", "age", "wh_ratio"])
+            #
+            # cleaned_data=our_pipeline(pred_frame)
+            #
+            # #Clean data and predict
+            # mexican_model = PredictorConfig.mexican_predictor
+            # # r = [0] * 41
+            # # r.append(70)
+            # # r.append(0)
+            # # r.append(1.7)
+            # # r.append(1)
+            # #
+            # # p = np.array(r)
+            # # t = p.reshape(1, -1)
+            # mexican_prediction=mexican_model.predict(cleaned_data)
 
-            return HttpResponse("Prediction for Mexican Cuisine:  "+str(mexican_prediction))
+            return HttpResponse("Prediction for Mexican Cuisine:  "+str("hey"))
         else:
             form = UserAttributesForm(request.POST)
             return render(request, 'predictor/classifyme.html', context={'form': form})
