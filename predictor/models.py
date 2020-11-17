@@ -115,3 +115,4 @@ class UserAttributes(models.Model):
     budget=models.CharField(max_length=200, choices=BUDGET_CHOICES, default="")
     height=models.FloatField(validators=[MinValueValidator(0.6), MaxValueValidator(2.2)])
     age = models.IntegerField(default=20, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    hunger=models.IntegerField(default="")
