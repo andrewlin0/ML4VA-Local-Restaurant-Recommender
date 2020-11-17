@@ -3,9 +3,10 @@ from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from .apps import PredictorConfig
+# import pandas
 
 
-def pipeline(userinput):
+def our_pipeline(userinput):
     return PredictorConfig.data_pipeline.transform(userinput)
 
 #

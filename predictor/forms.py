@@ -8,8 +8,8 @@ class UserAttributesForm(ModelForm):
         fields = '__all__'
 
         widgets = {
-            'height': TextInput(attrs={'placeholder': 'Enter your weight in Kilograms'}),
-            'weight': TextInput(attrs={'placeholder': 'Enter your height in Meters'}),
+            'height': TextInput(attrs={'placeholder': 'Enter your height in meters'}),
+            'weight': TextInput(attrs={'placeholder': 'Enter your weight in kilograms'}),
         }
 
     def clean_height(self):
