@@ -8,10 +8,17 @@
     margin-bottom: 10%;
 }
 
+.move-down {
+    padding-top:5%;
+    padding-left: 6%;
+}
+
 h1 {
     font-family: "Montserrat";
     font-size: 3.5rem;
     line-height: 1.5;
+    font-weight: bold;
+    color: darkgreen;
 }
 
 
@@ -37,7 +44,7 @@ body {
 }
 
 .navbarbackground {
-    background-color: blueviolet;
+    background-color: darkgreen;
 }
 
 .navbar-brand {
@@ -68,7 +75,7 @@ body {
 }
 
 .profile_page {
-    background-image: url("https://images.pexels.com/photos/1415734/pexels-photo-1415734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     /*background-color: blueviolet;*/
     color: black;
 
@@ -213,7 +220,7 @@ hr {
 }
 
 label {
-    color: navy;
+    color: green;
     font-weight: bold;
 }
 

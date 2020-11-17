@@ -7,53 +7,53 @@ SMOKECHOICES=[
 ]
 
 DRINK_CHOICES=[
-    ('Abstemious', 'Abstemious'),
-    ('Social Drinker', 'Social Drinker'),
-    ('Casual Drinker', 'Casual Drinker'),
+    ('abstemious', 'Abstemious'),
+    ('social drinker', 'Social Drinker'),
+    ('casual drinker', 'Casual Drinker'),
 ]
 
 DRESS_CHOICES=[
-    ('Formal', 'Formal'),
-    ('Informal', 'Informal'),
-    ('No Preference', 'No Preference')
+    ('formal', 'Formal'),
+    ('informal', 'Informal'),
+    ('no preference', 'No Preference')
 ]
 
 AMBIENCE_CHOICES=[
-    ('Family', 'Family'),
-    ('Friends', 'Friends'),
-    ('Solitary', 'Solitary')
+    ('family', 'Family'),
+    ('friends', 'Friends'),
+    ('solitary', 'Solitary')
 ]
 
 TRANSPORT_CHOICES=[
-    ('Car Owner', 'Car Owner'),
-    ('Public', 'Public Transport'),
-    ('On foot', 'On foot')
+    ('car owner', 'Car Owner'),
+    ('public', 'Public Transport'),
+    ('on foot', 'On foot')
 ]
 
 MARITAL_CHOICES=[
-    ('Single', 'Single'),
-    ('Married', 'Married'),
-    ('Widow', 'Widow')
+    ('single', 'Single'),
+    ('married', 'Married'),
+    ('widow', 'Widow')
 ]
 
 CHILDREN_CHOICES=[
-    ('Independent', 'Independent'),
-    ('Dependent', 'Dependent'),
-    ('Kids', 'Kids')
+    ('independent', 'Independent'),
+    ('dependent', 'Dependent'),
+    ('kids', 'Kids')
 ]
 
 INTEREST_CHOICES=[
-    ('Technology', 'Technology'),
-    ('Eco-Friendly', 'Eco-Friendly'),
-    ('Retro', 'Retro'),
-    ('Variety', 'Variety'),
-    ('None', 'None')
+    ('technology', 'Technology'),
+    ('eco-friendly', 'Eco-Friendly'),
+    ('retro', 'Retro'),
+    ('variety', 'Variety'),
+    ('none', 'None')
 ]
 
 PERSONALITY_CHOICES=[
-    ('hard-worker', 'Hard-worker'),
-    ('hunter-ostentatious', 'Hunter-ostentatious'),
-    ('thrifty-protector', 'Thrifty-protector'),
+    ('hard-worker', 'Hard Worker'),
+    ('hunter-ostentatious', 'Extrovert'),
+    ('thrifty-protector', 'Introvert'),
     ('conformist', 'Conformist'),
 ]
 
@@ -61,15 +61,14 @@ RELIGION_CHOICES=[
     ('Christian', 'Christian'),
     ('Jewish', 'Jewish'),
     ('Muslim', 'Muslim'),
-    ('Mormon', 'Mormon'),
     ('Other', 'Other'),
-    ('None', 'None')
+    ('none', 'None')
 ]
 
 ACTIVITY_CHOICES=[
-    ('Student', 'Student'),
-    ('Professional', 'Professional'),
-    ('Unemployed', 'Unemployed')
+    ('student', 'Student'),
+    ('professional', 'Professional'),
+    ('unemployed', 'Unemployed')
 ]
 
 COLOR_CHOICES=[
@@ -89,7 +88,17 @@ BUDGET_CHOICES=[
     ('high', 'High')
 ]
 
+LOCATION_CHOICES=[
+    ('Charlottesville', 'Charlottesville'),
+    ('NoVA', 'NoVA'),
+    ('Roanoke', 'Roanoke'),
+    ('Richmond', 'Richmond'),
+    ('Virginia Beach', 'Virginia Beach'),
+    ('Blacksburg', 'Blacksburg')
+]
+
 class UserAttributes(models.Model):
+    location=models.CharField(max_length=200, choices=LOCATION_CHOICES, default="")
     smoker=models.CharField(max_length=200, choices=SMOKECHOICES, default="")
     drink_level=models.CharField(max_length=200, choices=DRINK_CHOICES, default="")
     dress_preference=models.CharField(max_length=200, choices=DRESS_CHOICES, default="")
