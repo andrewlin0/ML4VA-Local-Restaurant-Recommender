@@ -472,11 +472,11 @@ BBurg_dict = {
 
 
 Main_dict = {
-    "NOVA": NOVA_dict,
+    "NoVA": NOVA_dict,
     "Roanoke": Roanoke_dict,
     "Charlottesville": Cville_dict,
     "Richmond": Richmond_dict,
-    "Virginia_Beach": VB_dict,
+    "Virginia Beach": VB_dict,
     "Blacksburg": BBurg_dict
 }
 

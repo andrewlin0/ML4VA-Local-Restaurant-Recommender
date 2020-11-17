@@ -8,6 +8,7 @@ from django.http import JsonResponse
 from rest_framework.views import APIView
 # Create your views here.
 from .kaleb import Main_dict
+from .kaleb import get_restaurant
 from .pipeline import our_pipeline
 
 def index(request):
@@ -50,55 +51,62 @@ def classify_me(request, target=None):
             cleaned_data=our_pipeline(pred_frame)
 
             #Clean data and predict
-            lst=[]
+            cuisine_recommendations=[]
 
             mexican_model = PredictorConfig.mexican_predictor
             mexican_prediction=mexican_model.predict(cleaned_data)
 
             if mexican_prediction[0] == 1:
-                lst.append("Mexican")
+                cuisine_recommendations.append("Mexican")
 
             american_model= PredictorConfig.american_model
             american_prediction=american_model.predict(cleaned_data)
 
             if american_prediction[0] == 1:
-                lst.append("American")
+                cuisine_recommendations.append("American")
 
             italian_model = PredictorConfig.italian_model
             italian_prediction= italian_model.predict(cleaned_data)
 
             if italian_prediction[0] == 1:
-                lst.append("Italian")
+                cuisine_recommendations.append("Italian")
 
             des_model= PredictorConfig.dessert_model
             dessert_prediction= des_model.predict(cleaned_data)
 
             if dessert_prediction[0] == 1:
-                lst.append("Dessert/Cafe")
+                cuisine_recommendations.append("Dessert/Cafe")
 
             asian_model = PredictorConfig.asian_model
             asian_prediction = asian_model.predict(cleaned_data)
 
             if asian_prediction[0] == 1:
-                lst.append("Asian")
+                cuisine_recommendations.append("Asian")
 
             modern_model = PredictorConfig.modern_model
             modern_prediction = modern_model.predict(cleaned_data)
             if modern_prediction[0] == 1:
-                lst.append("Modern")
+                cuisine_recommendations.append("Modern")
 
             me_model = PredictorConfig.me_model
             me_prediction = me_model.predict(cleaned_data)
             if me_prediction[0] == 1:
-                lst.append("Mediterranean/Middle East")
+                cuisine_recommendations.append("Mediterranean/Middle East")
 
             euro_model = PredictorConfig.euro_model
             euro_prediction = euro_model.predict(cleaned_data)
             if euro_prediction[0] == 1:
-                lst.append("European")
+                cuisine_recommendations.append("European")
 
 
-            return HttpResponse("Prediction for Mexican Cuisine:  "+str(lst))
+            all_recommendations=[]
+            for cuisine in cuisine_recommendations:
+                restaurant_recommendations= get_restaurant(location, cuisine, Main_dict, True)
+                all_recommendations.append(restaurant_recommendations)
+
+
+
+            return HttpResponse("Prediction for Mexican Cuisine:  "+str(cuisine_recommendations)+" Restaurant Recommendations"+str(all_recommendations))
         else:
             form = UserAttributesForm(request.POST)
             return render(request, 'predictor/classifyme.html', context={'form': form})
