@@ -6,6 +6,7 @@ from .forms import *
 from django.http import JsonResponse
 from rest_framework.views import APIView
 # Create your views here.
+from .kaleb import Main_dict
 
 def index(request):
     # mexican_model=PredictorConfig.mexican_predictor
@@ -44,10 +45,12 @@ def classify_me(request, target=None):
             budget = user_input.budget
             height = user_input.height
             age = user_input.age
+
+            #print(Main_dict)
             #Clean data and predict
             return HttpResponse("Thank you for filling out the form")
         else:
-            form = UserAttributesForm()
+            form = UserAttributesForm(request.POST)
             return render(request, 'predictor/classifyme.html', context={'form': form})
     else:
         form= UserAttributesForm()

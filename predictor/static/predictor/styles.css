@@ -141,6 +141,10 @@ hr {
     padding-top: 15px;
 }
 
+.more_padding_top {
+    padding-top: 10%;
+}
+
 .compose_msg_padding {
     padding-top:7%;
     padding-left: 3%;
