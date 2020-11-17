@@ -33,7 +33,6 @@ TRANSPORT_CHOICES=[
 MARITAL_CHOICES=[
     ('single', 'Single'),
     ('married', 'Married'),
-    ('widow', 'Widow')
 ]
 
 CHILDREN_CHOICES=[
