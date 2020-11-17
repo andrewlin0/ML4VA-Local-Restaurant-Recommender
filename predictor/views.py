@@ -11,17 +11,19 @@ from .kaleb import Main_dict
 from .kaleb import get_restaurant
 from .pipeline import our_pipeline
 
+
 def index(request):
     return render(request, "predictor/index.html")
 
+
 def classify_me(request, target=None):
-    if request.method== 'POST': #Form has just been filled out
+    if request.method == 'POST':  # Form has just been filled out
         form = UserAttributesForm(request.POST)
         if form.is_valid():
 
-            user_input=form.save()
+            user_input = form.save()
 
-            location=user_input.location
+            location = user_input.location
             smoker = user_input.smoker
             drink_level = user_input.drink_level
             dress_preference = user_input.dress_preference
@@ -38,41 +40,45 @@ def classify_me(request, target=None):
             budget = user_input.budget
             height = user_input.height
             age = user_input.age
-            ratio=weight/height
+            ratio = weight / height
 
-            preliminary_list=[bool(smoker), drink_level, dress_preference, ambience, transport, marital_status, hijos, interest, personality,
-                              religion, activity, color, budget, age, ratio]
+            preliminary_list = [bool(smoker), drink_level, dress_preference, ambience, transport, marital_status, hijos,
+                                interest, personality,
+                                religion, activity, color, budget, age, ratio]
 
-            preliminary_list=np.asarray(preliminary_list)
+            preliminary_list = np.asarray(preliminary_list)
 
-            pred_frame=pd.DataFrame([preliminary_list], columns=["smoker", "drink_level", "dress_preference", "ambience", "transport", "marital_status",
-                                                               "hijos", "interest", "personality","religion", "activity", "color", "budget", "age", "wh_ratio"])
+            pred_frame = pd.DataFrame([preliminary_list],
+                                      columns=["smoker", "drink_level", "dress_preference", "ambience", "transport",
+                                               "marital_status",
+                                               "hijos", "interest", "personality", "religion", "activity", "color",
+                                               "budget", "age", "wh_ratio"])
 
-            cleaned_data=our_pipeline(pred_frame)
+            cleaned_data = our_pipeline(pred_frame)
 
-            #Clean data and predict
-            cuisine_recommendations=[]
+            # Clean data and predict
+            cuisine_recommendations = []
 
             mexican_model = PredictorConfig.mexican_predictor
-            mexican_prediction=mexican_model.predict(cleaned_data)
+            mexican_prediction = mexican_model.predict(cleaned_data)
 
             if mexican_prediction[0] == 1:
                 cuisine_recommendations.append("Mexican")
 
-            american_model= PredictorConfig.american_model
-            american_prediction=american_model.predict(cleaned_data)
+            american_model = PredictorConfig.american_model
+            american_prediction = american_model.predict(cleaned_data)
 
             if american_prediction[0] == 1:
                 cuisine_recommendations.append("American")
 
             italian_model = PredictorConfig.italian_model
-            italian_prediction= italian_model.predict(cleaned_data)
+            italian_prediction = italian_model.predict(cleaned_data)
 
             if italian_prediction[0] == 1:
                 cuisine_recommendations.append("Italian")
 
-            des_model= PredictorConfig.dessert_model
-            dessert_prediction= des_model.predict(cleaned_data)
+            des_model = PredictorConfig.dessert_model
+            dessert_prediction = des_model.predict(cleaned_data)
 
             if dessert_prediction[0] == 1:
                 cuisine_recommendations.append("Dessert/Cafe")
@@ -98,18 +104,16 @@ def classify_me(request, target=None):
             if euro_prediction[0] == 1:
                 cuisine_recommendations.append("European")
 
-
-            all_recommendations=[]
+            all_recommendations = []
             for cuisine in cuisine_recommendations:
-                restaurant_recommendations= get_restaurant(location, cuisine, Main_dict, True)
+                restaurant_recommendations = get_restaurant(location, cuisine, Main_dict, True)
                 all_recommendations.append(restaurant_recommendations)
 
-
-
-            return HttpResponse("Prediction for Mexican Cuisine:  "+str(cuisine_recommendations)+" Restaurant Recommendations"+str(all_recommendations))
+            return render(request, 'predictor/prediction.html',
+                          context={'cuisines': cuisine_recommendations, 'restaurants': all_recommendations})
         else:
             form = UserAttributesForm(request.POST)
             return render(request, 'predictor/classifyme.html', context={'form': form})
     else:
-        form= UserAttributesForm()
+        form = UserAttributesForm()
         return render(request, 'predictor/classifyme.html', context={'form': form})

@@ -3,6 +3,14 @@
     color: white;
 }
 
+h2{
+    color: black;
+}
+
+.pad_top{
+    padding-top:25%;
+}
+
 .main-text {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -11,6 +19,15 @@
 .move-down {
     padding-top:5%;
     padding-left: 6%;
+}
+
+.move-little-down {
+    padding-top:1%;
+    padding-left: 4%;
+}
+
+.pad_left {
+    padding-left: 15%;
 }
 
 h1 {
@@ -35,8 +52,11 @@ h1 {
 
 .usernameTag {
     text-align: center;
-    color: blueviolet;
     margin-bottom: 5%
+}
+
+.blacktext{
+    font-weight: bold;
 }
 
 body {
