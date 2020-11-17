@@ -21,7 +21,7 @@ class PredictorConfig(AppConfig):
     path3 = os.path.join(settings.MODELS, 'ameri_model.pkl')
 
     with open(path3, 'rb') as pickled3:
-        american_predictor = pickle.load(pickled3)
+        american_model = pickle.load(pickled3)
 
     path4 = os.path.join(settings.MODELS, 'asi_model.pkl')
 

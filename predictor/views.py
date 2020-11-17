@@ -50,18 +50,55 @@ def classify_me(request, target=None):
             cleaned_data=our_pipeline(pred_frame)
 
             #Clean data and predict
+            lst=[]
+
             mexican_model = PredictorConfig.mexican_predictor
-            # r = [0] * 41
-            # r.append(70)
-            # r.append(0)
-            # r.append(1.7)
-            # r.append(1)
-            #
-            # p = np.array(r)
-            # t = p.reshape(1, -1)
             mexican_prediction=mexican_model.predict(cleaned_data)
 
-            return HttpResponse("Prediction for Mexican Cuisine:  "+str(mexican_prediction))
+            if mexican_prediction[0] == 1:
+                lst.append("Mexican")
+
+            american_model= PredictorConfig.american_model
+            american_prediction=american_model.predict(cleaned_data)
+
+            if american_prediction[0] == 1:
+                lst.append("American")
+
+            italian_model = PredictorConfig.italian_model
+            italian_prediction= italian_model.predict(cleaned_data)
+
+            if italian_prediction[0] == 1:
+                lst.append("Italian")
+
+            des_model= PredictorConfig.dessert_model
+            dessert_prediction= des_model.predict(cleaned_data)
+
+            if dessert_prediction[0] == 1:
+                lst.append("Dessert/Cafe")
+
+            asian_model = PredictorConfig.asian_model
+            asian_prediction = asian_model.predict(cleaned_data)
+
+            if asian_prediction[0] == 1:
+                lst.append("Asian")
+
+            modern_model = PredictorConfig.modern_model
+            modern_prediction = modern_model.predict(cleaned_data)
+            if modern_prediction[0] == 1:
+                lst.append("Modern")
+
+            me_model = PredictorConfig.me_model
+            me_prediction = me_model.predict(cleaned_data)
+            if me_prediction[0] == 1:
+                lst.append("Mediterranean/Middle East")
+
+            euro_model = PredictorConfig.euro_model
+            euro_prediction = euro_model.predict(cleaned_data)
+            if euro_prediction[0] == 1:
+                lst.append("European")
+
+
+            return HttpResponse("Prediction for Mexican Cuisine:  "+str(lst))
         else:
             form = UserAttributesForm(request.POST)
             return render(request, 'predictor/classifyme.html', context={'form': form})
