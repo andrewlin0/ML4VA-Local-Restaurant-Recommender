@@ -3,23 +3,13 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from .apps import PredictorConfig
 from .forms import *
+import pandas as pd
 from django.http import JsonResponse
 from rest_framework.views import APIView
 # Create your views here.
 from .kaleb import Main_dict
 
 def index(request):
-    # mexican_model=PredictorConfig.mexican_predictor
-    # r = [0] * 45
-    # r.append(70)
-    # r.append(0)
-    # r.append(1.7)
-    # r.append(1)
-    #
-    # p=np.array(r)
-    # t=p.reshape(1, -1)
-    # print(mexican_model.predict(t))
-
     return render(request, "predictor/index.html")
 
 def classify_me(request, target=None):
@@ -48,7 +38,18 @@ def classify_me(request, target=None):
 
             #print(Main_dict)
             #Clean data and predict
-            return HttpResponse("Thank you for filling out the form")
+            mexican_model = PredictorConfig.mexican_predictor
+            r = [0] * 41
+            r.append(70)
+            r.append(0)
+            r.append(1.7)
+            r.append(1)
+
+            p = np.array(r)
+            t = p.reshape(1, -1)
+            mexican_prediction=mexican_model.predict(t)
+
+            return HttpResponse("Prediction for Mexican Cuisine: "+str(mexican_prediction))
         else:
             form = UserAttributesForm(request.POST)
             return render(request, 'predictor/classifyme.html', context={'form': form})

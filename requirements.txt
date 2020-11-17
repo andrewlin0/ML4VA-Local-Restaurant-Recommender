@@ -6,4 +6,5 @@ Pillow
 django-crispy-forms
 sklearn
 numpy
+pandas
 djangorestframework
