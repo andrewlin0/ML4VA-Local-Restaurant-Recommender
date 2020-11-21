@@ -1,0 +1,121 @@
+userID,smoker,drink_level,dress_preference,ambience,transport,marital_status,hijos,interest,personality,religion,activity,color,weight,budget,height,age
+U1139,FALSE,abstemious,formal,family,car owner,single,independent,Technology,hard-worker,none,Student,black,67,low,,22
+U1140,FALSE,abstemious,no preference,friends,car owner,single,independent,Eco-friendly,hard-worker,none,Professional,green,67,low,,23
+U1141,FALSE,abstemious,no preference,friends,public,single,dependent,Technology,hard-worker,none,Student,blue,67,medium,,20
+U1142,FALSE,social drinker,no preference,friends,car owner,single,independent,Variety,hard-worker,Christian,Professional,orange,67,medium,,27
+U1143,FALSE,abstemious,informal,friends,public,single,independent,Technology,hunter_ostentatious,none,Professional,blue,67,medium,,24
+U1144,FALSE,social drinker,formal,family,public,single,dependent,Variety,hard-worker,Christian,Professional,white,46,low,1.6,22
+U1145,FALSE,casual drinker,no preference,friends,on foot,single,dependent,Eco-friendly,thrifty-protector,Christian,Student,purple,67,medium,,19
+U1146,FALSE,social drinker,informal,family,on foot,single,independent,Retro,hard-worker,Other,Student,purple,68,medium,1.73,21
+U1147,TRUE,casual drinker,informal,friends,car owner,single,independent,Retro,hunter_ostentatious,Mormon,Unemployed,black,67,high,1.7,26
+U1148,FALSE,social drinker,informal,solitary,on foot,single,dependent,Variety,hard-worker,Jewish,Student,blue,73,medium,1.7,21
+U1149,FALSE,abstemious,no preference,solitary,public,widow,kids,None,conformist,Muslim,Student,white,20,medium,,46
+U1150,FALSE,social drinker,informal,friends,public,single,dependent,Eco-friendly,hard-worker,none,Student,black,67,medium,,21
+U1151,TRUE,social drinker,informal,family,on foot,single,dependent,Eco-friendly,hard-worker,Muslim,Student,green,87,medium,,19
+U1152,FALSE,abstemious,informal,family,public,single,dependent,Technology,conformist,Catholic,Student,purple,60,low,1.7,10
+U1153,FALSE,social drinker,informal,solitary,public,single,independent,Variety,thrifty-protector,none,Student,orange,68,low,1.65,20
+U1154,FALSE,abstemious,informal,friends,car owner,single,independent,Variety,hard-worker,none,Student,orange,58,low,1.65,19
+U1155,FALSE,abstemious,informal,family,car owner,single,dependent,Variety,thrifty-protector,Other,Student,green,73,medium,1.58,20
+U1156,FALSE,abstemious,no preference,family,on foot,single,independent,Technology,hunter_ostentatious,none,Student,orange,73,medium,1.68,21
+U1157,FALSE,abstemious,formal,solitary,car owner,single,independent,Technology,conformist,Christian,Professional,blue,58,low,1.7,25
+U1158,FALSE,social drinker,formal,friends,car owner,single,independent,Technology,hard-worker,Christian,Student,black,57,high,1.76,21
+U1159,FALSE,abstemious,informal,solitary,car owner,single,independent,Eco-friendly,thrifty-protector,none,Professional,yellow,58,low,1.7,22
+U1160,FALSE,social drinker,no preference,friends,on foot,single,kids,Retro,hard-worker,none,Student,yellow,67,low,,21
+U1161,FALSE,casual drinker,informal,friends,on foot,single,independent,Eco-friendly,hard-worker,none,Student,blue,72,low,1.74,22
+U1162,FALSE,social drinker,no preference,friends,on foot,single,dependent,Variety,hard-worker,Christian,Student,green,79,medium,1.55,20
+U1163,FALSE,abstemious,no preference,friends,on foot,single,dependent,Technology,hard-worker,Christian,Student,blue,64,low,1.75,20
+U1164,FALSE,abstemious,informal,family,car owner,single,independent,Variety,thrifty-protector,Christian,Professional,purple,67,medium,,21
+U1165,FALSE,abstemious,informal,family,car owner,single,independent,Technology,hard-worker,Other,Student,red,50,low,1.52,18
+U1166,FALSE,casual drinker,informal,solitary,on foot,single,independent,Technology,hard-worker,none,Student,purple,64,low,1.68,19
+U1167,FALSE,abstemious,informal,solitary,car owner,single,independent,Technology,hard-worker,none,Student,black,64,low,1.72,21
+U1168,FALSE,abstemious,no preference,family,on foot,single,dependent,Variety,hard-worker,Other,Student,purple,66,low,1.6,18
+U1169,TRUE,casual drinker,informal,friends,on foot,single,independent,None,hard-worker,none,Student,black,95,medium,1.83,20
+U1170,FALSE,social drinker,no preference,friends,on foot,single,independent,Technology,conformist,none,Student,blue,66,low,1.8,19
+U1171,FALSE,casual drinker,informal,solitary,car owner,single,dependent,Technology,hard-worker,Catholic,Student,blue,67,medium,,21
+U1172,FALSE,abstemious,formal,friends,on foot,single,independent,Technology,hard-worker,Muslim,Student,blue,70,medium,1.7,20
+U1173,FALSE,social drinker,informal,solitary,on foot,single,independent,Technology,hard-worker,Jewish,Student,red,68,medium,1.7,20
+U1174,FALSE,abstemious,informal,family,on foot,single,dependent,Technology,hard-worker,none,Student,blue,67,medium,,19
+U1175,FALSE,social drinker,informal,family,car owner,single,independent,Technology,hard-worker,none,Student,black,67,medium,,20
+U1176,FALSE,casual drinker,no preference,family,car owner,single,independent,Technology,hard-worker,none,Student,blue,67,medium,1.8,18
+U1177,FALSE,social drinker,informal,friends,public,single,dependent,Technology,hard-worker,Christian,Student,blue,55,medium,1.65,20
+U1178,FALSE,abstemious,informal,family,car owner,married,kids,Variety,thrifty-protector,none,Professional,blue,91,medium,,47
+U1179,FALSE,casual drinker,informal,friends,car owner,married,independent,Eco-friendly,hard-worker,Catholic,Professional,blue,68,medium,1.7,45
+U1180,FALSE,abstemious,formal,solitary,car owner,single,independent,Technology,thrifty-protector,none,Student,red,47,medium,1.52,22
+U1181,FALSE,abstemious,no preference,friends,car owner,single,independent,Technology,thrifty-protector,none,Professional,green,67,low,,24
+U1182,FALSE,casual drinker,no preference,family,car owner,married,kids,Technology,thrifty-protector,Jewish,Professional,orange,119,low,1.8,52
+U1183,FALSE,social drinker,no preference,friends,on foot,single,dependent,Variety,hard-worker,Christian,Student,blue,62,low,1.7,18
+U1184,FALSE,abstemious,no preference,family,car owner,married,kids,Technology,hard-worker,Christian,Professional,blue,92,medium,1.85,29
+U1185,FALSE,abstemious,no preference,solitary,public,single,dependent,Technology,hard-worker,none,Student,blue,55,low,1.7,17
+U1186,FALSE,social drinker,informal,family,on foot,single,dependent,Variety,hard-worker,none,Student,black,50,low,1.6,18
+U1187,FALSE,social drinker,informal,friends,public,single,independent,Technology,thrifty-protector,none,Professional,black,67,medium,,24
+U1188,FALSE,social drinker,informal,friends,car owner,single,dependent,Eco-friendly,hard-worker,Other,Student,green,59,low,1.57,21
+U1189,FALSE,casual drinker,informal,family,car owner,married,independent,Eco-friendly,thrifty-protector,none,Professional,green,61,medium,1.7,29
+U1190,FALSE,social drinker,informal,friends,car owner,single,dependent,Technology,hunter_ostentatious,Jewish,Student,green,59,medium,1.8,21
+U1191,FALSE,social drinker,informal,friends,car owner,single,independent,Retro,hard-worker,Christian,Professional,black,67,low,,23
+U1192,TRUE,casual drinker,no preference,solitary,public,married,independent,None,thrifty-protector,none,Professional,black,67,medium,,35
+U1193,FALSE,social drinker,informal,friends,on foot,single,independent,Variety,hard-worker,Christian,Student,green,64,medium,1.75,19
+U1194,FALSE,abstemious,informal,family,on foot,single,independent,Technology,thrifty-protector,Muslim,Professional,black,67,low,,22
+U1195,FALSE,abstemious,informal,solitary,car owner,single,dependent,Technology,hard-worker,Christian,Student,blue,68,low,1.78,19
+U1196,FALSE,social drinker,informal,solitary,public,single,dependent,Technology,hard-worker,none,Student,blue,85,medium,,22
+U1197,FALSE,social drinker,informal,friends,public,single,independent,Technology,hard-worker,Christian,Student,yellow,60,low,,22
+U1198,FALSE,social drinker,informal,solitary,public,single,independent,Technology,thrifty-protector,none,Student,red,65,medium,1.78,21
+U1199,FALSE,social drinker,informal,friends,car owner,single,independent,Variety,hunter_ostentatious,none,Professional,red,72,medium,1.83,25
+U1200,FALSE,abstemious,informal,friends,car owner,single,dependent,Eco-friendly,thrifty-protector,none,Student,green,66,low,1.7,16
+U1201,FALSE,social drinker,informal,friends,on foot,married,independent,Variety,thrifty-protector,none,Professional,blue,55,medium,1.58,25
+U1202,FALSE,social drinker,informal,friends,on foot,married,independent,Variety,thrifty-protector,none,Professional,blue,55,medium,1.58,25
+U1203,FALSE,abstemious,no preference,friends,public,single,independent,Technology,thrifty-protector,none,Student,purple,67,medium,,22
+U1204,FALSE,abstemious,informal,friends,car owner,single,independent,Technology,hard-worker,none,Student,blue,80,low,1.83,21
+U1205,FALSE,abstemious,informal,family,on foot,single,dependent,Technology,hard-worker,Other,Student,blue,54,medium,1.4,18
+U1206,FALSE,abstemious,informal,solitary,public,single,dependent,Variety,hunter_ostentatious,none,Student,blue,55,low,1.7,18
+U1207,FALSE,abstemious,formal,solitary,public,single,independent,Eco-friendly,thrifty-protector,Other,Professional,black,67,high,,31
+U1208,FALSE,abstemious,informal,solitary,car owner,single,dependent,Technology,hard-worker,Christian,Student,blue,61,low,1.8,22
+U1209,FALSE,abstemious,no preference,friends,public,single,dependent,Eco-friendly,hard-worker,none,Student,blue,55,low,1.57,16
+U1210,FALSE,abstemious,no preference,family,car owner,single,dependent,Technology,hard-worker,none,Student,green,67,medium,,21
+U1211,FALSE,casual drinker,no preference,friends,car owner,single,independent,Technology,hard-worker,Christian,Unemployed,black,67,medium,,21
+U1212,FALSE,abstemious,no preference,solitary,on foot,single,dependent,Technology,hard-worker,Christian,Student,green,67,low,1.86,18
+U1213,FALSE,casual drinker,no preference,friends,on foot,single,dependent,Eco-friendly,thrifty-protector,none,Student,white,67,medium,,21
+U1214,FALSE,abstemious,informal,family,on foot,single,dependent,Technology,hard-worker,none,Student,yellow,67,low,,18
+U1215,FALSE,social drinker,informal,friends,on foot,single,independent,Technology,hard-worker,Christian,Professional,purple,67,medium,,30
+U1216,FALSE,social drinker,informal,friends,car owner,single,dependent,Technology,hard-worker,Christian,Student,purple,68,medium,1.7,21
+U1217,TRUE,casual drinker,informal,friends,on foot,single,dependent,Technology,conformist,none,Student,blue,69,low,1.8,18
+U1218,TRUE,abstemious,formal,friends,car owner,married,kids,Technology,hunter_ostentatious,Christian,Professional,black,73,high,,42
+U1219,FALSE,abstemious,informal,friends,on foot,single,independent,Retro,thrifty-protector,none,Student,green,68,low,1.55,31
+U1220,FALSE,casual drinker,informal,friends,public,single,dependent,Eco-friendly,hard-worker,none,Student,blue,67,low,,22
+U1221,FALSE,abstemious,informal,solitary,car owner,single,dependent,Variety,hard-worker,none,Student,blue,67,low,,17
+U1222,TRUE,casual drinker,formal,friends,car owner,single,dependent,Variety,hunter_ostentatious,none,Student,blue,55,medium,1.6,22
+U1223,FALSE,casual drinker,no preference,family,car owner,single,independent,Technology,hard-worker,none,Student,red,79,medium,1.8,20
+U1224,FALSE,abstemious,informal,family,on foot,married,independent,Eco-friendly,hard-worker,none,Professional,blue,53,medium,1.69,31
+U1225,FALSE,abstemious,informal,solitary,on foot,single,independent,Technology,thrifty-protector,Catholic,Professional,green,81,medium,1.8,27
+U1226,FALSE,casual drinker,formal,friends,public,single,independent,Technology,hard-worker,Christian,Student,white,53,low,1.63,21
+U1227,FALSE,abstemious,no preference,family,on foot,single,dependent,Eco-friendly,thrifty-protector,Other,Student,green,53,low,1.65,19
+U1228,FALSE,social drinker,formal,friends,car owner,married,independent,Variety,hunter_ostentatious,none,Student,red,57,medium,1.6,23
+U1229,FALSE,abstemious,informal,family,car owner,married,kids,Variety,hard-worker,none,Student,black,79,medium,1.78,53
+U1230,FALSE,abstemious,informal,solitary,on foot,single,dependent,Eco-friendly,thrifty-protector,none,Student,blue,54,low,1.6,21
+U1231,FALSE,social drinker,no preference,friends,car owner,single,independent,Eco-friendly,thrifty-protector,none,Unemployed,black,50,low,1.75,33
+U1232,FALSE,casual drinker,no preference,family,public,single,dependent,Eco-friendly,hunter_ostentatious,Other,Student,purple,64,low,1.57,20
+U1233,FALSE,abstemious,no preference,friends,public,single,independent,Technology,thrifty-protector,none,Student,blue,52,medium,1.68,20
+U1234,FALSE,abstemious,formal,family,car owner,single,independent,Variety,hard-worker,Catholic,Student,yellow,58,medium,1.65,19
+U1235,FALSE,abstemious,informal,solitary,car owner,married,independent,Technology,hard-worker,Catholic,Professional,black,67,low,,24
+U1236,FALSE,social drinker,informal,friends,on foot,single,independent,Technology,hard-worker,none,Student,blue,60,medium,1.7,21
+U1237,FALSE,social drinker,informal,friends,car owner,single,independent,Technology,hard-worker,none,Student,purple,64,medium,1.6,20
+U1238,FALSE,casual drinker,informal,friends,car owner,single,independent,Technology,thrifty-protector,Christian,Student,orange,67,medium,,22
+U1239,FALSE,abstemious,informal,friends,car owner,single,dependent,Technology,thrifty-protector,none,Student,blue,72,low,1.78,19
+U1240,FALSE,social drinker,informal,family,on foot,single,independent,Variety,hard-worker,Catholic,Professional,yellow,53,medium,1.6,29
+U1241,FALSE,casual drinker,no preference,solitary,car owner,single,independent,Eco-friendly,hard-worker,none,Student,purple,67,low,1.65,26
+U1242,FALSE,social drinker,no preference,friends,car owner,single,independent ,Eco-friendly,thrifty-protector,Christian,Professional,purple,86,medium,1.6,29
+U1243,FALSE,casual drinker,no preference,friends,car owner,single,dependent,Technology,thrifty-protector,none,Student,blue,75,medium,1.83,19
+U1244,FALSE,social drinker,informal,friends,car owner,single,dependent,Technology,thrifty-protector,Catholic,Student,blue,86,low,1.83,20
+U1245,FALSE,casual drinker,no preference,friends,on foot,single,independent,Retro,conformist,Catholic,Student,purple,91,medium,1.8,22
+U1246,FALSE,social drinker,informal,friends,car owner,single,dependent,Technology,thrifty-protector,Catholic,Student,blue,86,low,1.83,20
+U1247,FALSE,abstemious,informal,friends,on foot,single,dependent,Technology,thrifty-protector,Muslim,Student,purple,65,low,1.75,19
+U1248,FALSE,casual drinker,informal,solitary,car owner,married,kids,Retro,thrifty-protector,none,Unemployed,blue,105,low,,50
+U1249,FALSE,social drinker,formal,family,public,single,dependent,Eco-friendly,thrifty-protector,none,Student,red,56,low,1.69,18
+U1250,FALSE,social drinker,informal,friends,car owner,single,dependent,Eco-friendly,hard-worker,none,Student,red,100,low,1.7,21
+U1251,FALSE,social drinker,informal,solitary,car owner,single,independent,None,hard-worker,none,Professional,purple,67,medium,,27
+U1252,FALSE,social drinker,informal,family,car owner,single,dependent,Eco-friendly,hard-worker,none,Student,purple,67,low,,21
+U1253,FALSE,abstemious,informal,friends,car owner,single,independent,Technology,conformist,Christian,Professional,blue,64,medium,1.52,22
+U1254,FALSE,casual drinker,informal,friends,car owner,single,dependent,Technology,hard-worker,none,Student,black,82,medium,1.9,20
+U1255,TRUE,abstemious,formal,family,car owner,single,dependent,Technology,hard-worker,Muslim,Student,red,65,low,1.57,20
+U1256,FALSE,social drinker,no preference,friends,car owner,single,dependent,Technology,thrifty-protector,Christian,Student,blue,64,medium,1.7,21
+U1257,FALSE,social drinker,informal,friends,car owner,single,dependent,Technology,hunter_ostentatious,none,Student,black,68,medium,1.83,19
+U1258,FALSE,social drinker,informal,solitary,car owner,single,dependent,Variety,hard-worker,Other,Student,green,72,low,1.8,21
